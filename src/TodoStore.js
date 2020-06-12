@@ -35,7 +35,7 @@ const TodoStore = () => {
   };
 
   useEffect(() => {
-    console.log("내용이 추가되었습니다.", todos);
+    //console.log("내용이 추가되었습니다.", todos);
   }, [todos]);
 
   return (
