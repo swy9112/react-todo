@@ -11,7 +11,8 @@ export const TodoContext = React.createContext();
 const TodoStore = () => {
   const [todos, setTodos] = useState([]);
 
-  const loading = useFetch(setTodos, "http://localhost:8080/todo");
+  //const loading = useFetch(setTodos, "http://localhost:8080/todo");
+  const loading = "";
 
   const addTodo = newTodo => {
     newTodo ? setTodos([...todos, { id: todos.length, title: newTodo, status: "todo" }]) : alert("내용을 입력하세요.");
